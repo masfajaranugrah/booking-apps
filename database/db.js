@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDb = async () => {
   try {
-    const coon = await mongoose.connect("mongodb://127.0.0.1:27017/bookingDB", {
+    const coon = await mongoose.connect("mongodb+srv://admin:W4VTVJww3GFs1pGh@fajar.f49iaat.mongodb.net/bookingDB?retryWrites=true&w=majority", {
       userNewUrlPaser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
